@@ -7,16 +7,13 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   template: `
-    @if(isServerRunning){
-      <h2>Yes, the server is running</h2>
-    }
-    @else{
-      <h3>Server not found!</h3>
+    @for(user of users; track user.id){
+      <h3> {{user.name}}</h3>
     }
   `,
-  styles: `h2{color: lightgreen} h3{color: red}`
+  styles: `h3{color: red}`
 
 })
 export class AppComponent {
-  isServerRunning = true;
+  users=[{id: 0, name: 'Sarah'}, {id: 1, name: 'Amy'}, {id: 2, name: 'Rachel'}, {id: 3, name: 'Jessica'}, {id: 4, name: 'Poornima'}]
 }
