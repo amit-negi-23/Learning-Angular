@@ -13,3 +13,8 @@ import { AboutComponent } from './about/about.component';
 export class AppComponent {
   title = 'myapp';
 }
+
+
+/*encapsulation: viewEncapsulation.Emulated */
+/*encapsulation: viewEncapsulation.ShadowDom */
+/*encapsulation: viewEncapsulation.None */
