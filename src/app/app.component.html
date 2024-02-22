@@ -1,9 +1,9 @@
-    <div class="container">
-        <div class="app-section">
-            <h1 class="heading1">Parent component</h1>
-            <p class="text-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus dicta
-                consequatur perspiciatis temporibus deleniti pariatur ipsum placeat ea ex omnis sunt voluptas vero namad
-                id, sit odio nemo?</p>
-            </div>
-        <app-about></app-about>
+<div class="container mt-2">
+    <div class="app-section mb-5">
+        <h1 class="heading1">Parent component</h1>
+        <div>
+            Parent : <input type="text" #Pcomponent  (keyup)="0"/>
+        </div>
     </div>
+    <app-about [Pdata]="Pcomponent.value"></app-about>
+</div>
