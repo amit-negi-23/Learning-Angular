@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
-  inputs: ['Pdata']
+  outputs: ['childevent']
 })
 export class AboutComponent {
-  Pdata:any
+  childevent = new EventEmitter();
+  sendData(val: any){
+    this.childevent.emit(val)
+  }
 }

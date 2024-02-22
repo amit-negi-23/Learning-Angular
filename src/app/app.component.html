@@ -1,9 +1,7 @@
 <div class="container mt-2">
     <div class="app-section mb-5">
         <h1 class="heading1">Parent component</h1>
-        <div>
-            Parent : <input type="text" #Pcomponent  (keyup)="0"/>
-        </div>
+        <h4>My name is {{Cdata}}</h4>
     </div>
-    <app-about [Pdata]="Pcomponent.value"></app-about>
+    <app-about (childevent)="getData($event)"></app-about>
 </div>

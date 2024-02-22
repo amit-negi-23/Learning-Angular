@@ -11,4 +11,8 @@ import { AboutComponent } from './about/about.component';
 })
 export class AppComponent {
   title = 'myapp';
+  Cdata: any;
+  getData(val :any){
+    this.Cdata= val;
+  }
 }

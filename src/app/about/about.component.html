@@ -1,4 +1,6 @@
     <div>
         <h1>Child Component!</h1>
-        <h4>My name is {{Pdata}}</h4>
+        <div>
+            Child : <input type="text" #Ccomponent (keyup)="sendData(Ccomponent.value)"/>
+        </div>
     </div>
