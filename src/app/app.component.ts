@@ -6,14 +6,10 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  template: `
-    Welcome to Angular!
-  `,
-  styles: `
-    :host{
-      color: blue;
-    }
-  `
+  template: ` <h1>Hello {{city}}</h1> `,
+  styles: ` h1{color: red;} `
 
 })
-export class AppComponent { }
+export class AppComponent {
+  city = 'Delhi'
+ }
