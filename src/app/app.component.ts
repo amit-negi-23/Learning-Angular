@@ -7,7 +7,7 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   template: `
-    <button [disabled]="status"> Click me!</button>
+    <button [disabled]="status"> Click me!</button>  
   `,
   styles: `h3{color: red}`
 
@@ -15,3 +15,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   status = true;
 }
+
+
+/* [attribute] = "class property" */
+/* [attribute] = "class property" */
