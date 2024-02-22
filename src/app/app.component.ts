@@ -17,7 +17,3 @@ export class AppComponent {
       console.log("Button clicked")
     }
 }
-
-
-/* [attribute] = "class property" */
-/* [attribute] = "class property" */
