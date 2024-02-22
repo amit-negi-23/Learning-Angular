@@ -7,13 +7,14 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   template: `
-    <button (click)="show()" > Click me!</button>  
+    <div (mouseover)= "onMouseOver()" >{{message}}</div>
   `,
-  styles: `h3{color: red}`
+  styles: `div{color: red; font-size: 36px}`
 
 })
 export class AppComponent {
-    show(){
-      console.log("Button clicked")
+  message = "Hey ! Hello"
+    onMouseOver(){
+      this.message = " What's your name ?"
     }
 }
