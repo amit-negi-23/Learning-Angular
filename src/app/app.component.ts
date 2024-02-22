@@ -9,8 +9,11 @@ import { RouterOutlet } from '@angular/router';
   template: `
     Welcome to Angular!
   `,
+  styles: `
+    :host{
+      color: blue;
+    }
+  `
 
 })
-export class AppComponent {
-  title = 'myapp';
-}
+export class AppComponent { }
