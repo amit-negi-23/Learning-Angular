@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import {UserComponent} from './user/user.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: ` <h1>Hello {{city}}</h1> `,
-  styles: ` h1{color: red;} `
+  imports: [RouterOutlet, UserComponent],
+  template: ` <app-user/>`,
 
 })
-export class AppComponent {
-  city = 'Delhi'
- }
+export class AppComponent {}
