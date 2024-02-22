@@ -1,20 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { UserComponent } from './user/user.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <div (mouseover)= "onMouseOver()" >{{message}}</div>
-  `,
-  styles: `div{color: red; font-size: 36px}`
+  imports: [RouterOutlet,UserComponent],
+  template: `<app-user name = "Simran" ><app-user/>`,
+  styles: ``
 
 })
 export class AppComponent {
-  message = "Hey ! Hello"
-    onMouseOver(){
-      this.message = " What's your name ?"
-    }
+  
 }
