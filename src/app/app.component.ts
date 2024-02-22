@@ -7,13 +7,15 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   template: `
-    <button [disabled]="status"> Click me!</button>  
+    <button (click)="show()" > Click me!</button>  
   `,
   styles: `h3{color: red}`
 
 })
 export class AppComponent {
-  status = true;
+    show(){
+      console.log("Button clicked")
+    }
 }
 
 
