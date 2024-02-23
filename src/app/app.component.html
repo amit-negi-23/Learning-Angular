@@ -1,6 +1,7 @@
 <div class="container">
     <h1>Parent Component</h1>
-    <p>This is Parent Component</p>
+    <p>I am <span>{{fname}}</span></p>
+    
 
-    <app-user [name] = 'studentName'></app-user>
+    <app-child (addItemEvent)="addItem($event)"></app-child>
 </div>
