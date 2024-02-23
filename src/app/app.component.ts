@@ -7,12 +7,10 @@ import { UserComponent } from './user/user.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,UserComponent],
-  template: `<app-user name = "Simran"  ><app-user/>`,
-  styles: ``
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 
 })
 export class AppComponent {
-  
+  studentName = 'Amit Negi'
 }
-
-/*(addItemEvent)="addItem($event)" */
